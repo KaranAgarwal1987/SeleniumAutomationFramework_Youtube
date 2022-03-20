@@ -36,6 +36,7 @@ public class AnnotationTransformer implements IAnnotationTransformer{
 		annotation.setDataProvider("getData");
 		annotation.setDataProviderClass(DataProviderUtils.class);
 		annotation.setRetryAnalyzer(RetryFailedTests.class);
+
 	}
 
 	

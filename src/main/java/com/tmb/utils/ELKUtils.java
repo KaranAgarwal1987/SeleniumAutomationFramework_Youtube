@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.restassured.RestAssured;
 import org.testng.Assert;
 
 import com.tmb.enums.ConfigProperties;
@@ -45,7 +46,10 @@ public class ELKUtils {
 			map.put("status" , status);
 			map.put("executionTime", LocalDateTime.now().toString());
 
-			Response response = given().header("Content-Type","application/json")
+			//RestAssured.given().relaxedHTTPSValidation()
+			Response response = given().auth().preemptive().basic("elastic","VQT+KGomc_P6cJ*P41XT")
+					.relaxedHTTPSValidation()
+					.header("Content-Type","application/json")
 					.log()
 					.all()
 					.body(map)

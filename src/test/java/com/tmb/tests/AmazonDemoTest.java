@@ -47,7 +47,9 @@ public final class AmazonDemoTest extends BaseTest{
 		String title =new AmazonHomePage().clickHamburger()
 				.clickComputer()
 				.clickOnSubMenuItem(data.get("menutext")).getTitle();
-		Assertions.assertThat(title).isNotNull();	
+
+
+		Assertions.assertThat(title).isNotNull();
 	}
 
 	
