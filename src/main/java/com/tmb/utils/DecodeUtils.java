@@ -13,7 +13,7 @@ import java.util.Base64;
 public final class DecodeUtils {
 	
 	/**
-	 * Private constructor to avoid external instantiation
+	 * Private new constructor to avoid external instantiation
 	 */
 	private DecodeUtils() {}
 	
