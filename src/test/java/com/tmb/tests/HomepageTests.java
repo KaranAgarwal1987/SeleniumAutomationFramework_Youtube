@@ -33,7 +33,8 @@ public final class HomepageTests extends BaseTest{
 			.as("It does not contains expected text").containsIgnoringCase("google search")
 			.matches("\\w.*"+"Google Search")
 			.hasSizeBetween(15, 100);
-		
+
+
 		
 		List<WebElement> elements = DriverManager.getDriver().findElements(By.xpath("//h3/span"));
 		
