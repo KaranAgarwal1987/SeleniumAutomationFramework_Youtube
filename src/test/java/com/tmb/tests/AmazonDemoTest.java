@@ -31,7 +31,7 @@ public final class AmazonDemoTest extends BaseTest{
 
 	/**
 	 * Test Name mentioned here should match the column name "testname" in excel sheet.This is mandatory to run this
-	 * test. Otherwise it will be ignored. <p>
+	 * twwwest. Otherwise it will be ignored. <p>
 	 * The match has to be there in both of the RUNMANAGER and TESTDATA sheet.
 	 * Set the authors who have the created the test which will be logged to the reports.
 	 * Set the category which this particular test case belongs to
