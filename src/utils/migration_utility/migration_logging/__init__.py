@@ -1,0 +1,1 @@
+from .migration_logger import logger
